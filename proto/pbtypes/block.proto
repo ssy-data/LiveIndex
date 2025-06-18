@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package pbtypes;
+
+import "proto/pbcrypto/signature.proto";
+import "gogoproto-1.4.3/protobuf/google/protobuf/timestamp.proto";
+import "gogoproto-1.4.3/gogoproto/gogo.proto";
+
+message ChameleonHash {
+  bytes g_sigma = 1;
+  bytes hk_sigma = 2 [(gogoproto.customname) = "HKSigma"];
+  bytes alpha = 3;
+  bytes hash = 4;
+}
+
+message Block {
+  Header header           = 1;
+  Data body               = 2;
+  ChameleonHash chameleon_hash = 3;
+}
+
+message BlockHeight {
+  int64 height = 1;
+}
+
+message CommitBlock {
+  int64 height = 1;
+  bytes hash = 2;
+  pbcrypto.AggregateSignature aggregate_signature = 3;
+}
+
+message Header {
+  bytes previous_block_hash           = 1;
+  bytes block_data_hash                          = 2;
+  int64 height                        = 3;
+  google.protobuf.Timestamp timestamp = 4 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  string proposer                     = 5;
+}
+
+message Data {
+  bytes     root_hash = 1;
+  repeated bytes  txs = 2;
+}

@@ -1,0 +1,45 @@
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=10  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.07     18.06     9.73     7.14
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.75     18.93    12.52     6.53
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=20  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.63     20.52    15.65     6.47
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=25  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.73     19.00    15.34     6.14
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=30  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.93     19.37    17.45     6.44
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=35  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.75     18.50    19.41     6.69
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=40  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.47     18.94    21.53     6.39
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=45  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.66     19.52    23.19     6.33
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=50  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.69     19.11    24.97     6.32
+
+**************************************************************

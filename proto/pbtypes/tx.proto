@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pbtypes;
+
+import "proto/pbcrypto/proof.proto";
+
+message TxProof {
+  bytes           merkle_root_hash = 1;
+  bytes           data = 2;
+  pbcrypto.Proof  proof = 3;
+}
+
+message Txs {
+  repeated bytes txs = 1;
+}

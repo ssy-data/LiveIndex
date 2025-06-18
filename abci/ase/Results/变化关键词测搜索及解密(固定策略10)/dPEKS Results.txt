@@ -1,0 +1,66 @@
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=10  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       16.88    0.38  446.09    25.94   128.09
+Ru Meng PEKS      16.87    0.38 1477.84     6.66    22.61
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=15  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.25    0.40  451.42    39.00   127.45
+Ru Meng PEKS      17.07    0.38 1552.08     8.54    23.10
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=10  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.55    0.39  452.00    26.87   129.78
+Ru Meng PEKS      16.69    0.38 1477.54     6.74    22.73
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=15  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.03    0.39  455.51    39.45   128.53
+Ru Meng PEKS      16.65    0.38 1485.64     8.47    22.43
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=20  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       16.96    0.38  453.79    52.23   128.28
+Ru Meng PEKS      16.63    0.37 1483.69    10.14    22.70
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=25  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       16.70    0.38  453.45    65.23   126.68
+Ru Meng PEKS      16.79    0.37 1478.59    11.84    22.57
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=30  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       16.97    0.39  453.44    78.93   127.64
+Ru Meng PEKS      16.98    0.39 1477.47    13.88    22.60
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=35  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       16.81    0.39  450.35    91.55   127.15
+Ru Meng PEKS      16.83    0.38 1471.11    15.60    22.63
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=40  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.15    0.38  449.35   104.06   129.09
+Ru Meng PEKS      16.50    0.37 1467.32    17.15    22.61
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=45  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.01    0.38  453.48   117.24   127.66
+Ru Meng PEKS      16.70    0.38 1466.53    18.76    22.12
+
+**************************************************************
+dPEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=50  i=1
+dPEKS             Setup   sKGen   TkGen    Enc     Search
+CuiHui PEKS       17.22    0.38  452.62   128.05   127.65
+Ru Meng PEKS      16.75    0.37 1468.95    20.85    22.63
+
+**************************************************************

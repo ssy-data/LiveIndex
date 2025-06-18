@@ -1,0 +1,34 @@
+
+[basic]
+home = "node0"
+key_file = "node_key.json"
+chameleon_key_file = "chameleon_key.json"
+genesis_file = "genesis.json"
+db_backend = "goleveldb"
+db_dir = "data"
+app = "kvstore"
+
+[p2p]
+home = "node0"
+listen_address = "tcp://0.0.0.0:26656"
+addr_book = "config/addrbook.json"
+flush_duration = "100ms"
+max_packet_msg_payload_size = "1024"
+send_rate = "5120000"
+recv_rate = "5120000"
+pong_timeout = "45s"
+ping_interval = "1m30s"
+neighbours = "[996338b3ff6168064fa4@192.168.52.128:26656 81d1359e0f60382cbfce@192.168.52.128:26657 8c2a3c135492f65fcc4c@192.168.52.128:26658 834cee8475cb0be699af@192.168.52.128:26659]"
+
+[txs_pool]
+home = "node0"
+max_size = "2000"
+max_tx_bytes = "1024"
+
+[consensus]
+home = "node0"
+timeout_prepare = "3s"
+timeout_pre_commit = "1s"
+timeout_commit = "1s"
+timeout_decide = "1s"
+timeout_consensus = "10s"

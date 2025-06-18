@@ -1,0 +1,103 @@
+syntax = "proto3";
+
+package pbtypes;
+
+import "proto/pbcrypto/signature.proto";
+import "proto/pbtypes/block.proto";
+import "gogoproto-1.4.3/protobuf/google/protobuf/timestamp.proto";
+import "gogoproto-1.4.3/gogoproto/gogo.proto";
+
+enum ConsensusMessageType {
+  option (gogoproto.goproto_enum_stringer) = true;
+  option (gogoproto.goproto_enum_prefix)   = false;
+  NEXT_VIEW_TYPE = 0 [(gogoproto.enumvalue_customname) = "NextViewType"];
+  PREPARE_TYPE = 1 [(gogoproto.enumvalue_customname) = "PrepareType"];
+  PRE_COMMIT_TYPE = 2 [(gogoproto.enumvalue_customname) = "PreCommitType"];
+  COMMIT_TYPE = 3 [(gogoproto.enumvalue_customname) = "CommitType"];
+  DECIDE_TYPE = 4 [(gogoproto.enumvalue_customname) = "DecideType"];
+}
+
+enum VoteType {
+  option (gogoproto.goproto_enum_stringer) = true;
+  option (gogoproto.goproto_enum_prefix)   = false;
+  PREPARE_VOTE_TYPE = 0 [(gogoproto.enumvalue_customname) = "PrepareVoteType"];
+  PRE_COMMIT_VOTE_TYPE = 1 [(gogoproto.enumvalue_customname) = "PreCommitVoteType"];
+  COMMIT_VOTE_TYPE = 2 [(gogoproto.enumvalue_customname) = "CommitVoteType"];
+}
+
+message NextView {
+  ConsensusMessageType type = 1;
+  string id = 2 [(gogoproto.customname) = "ID"];
+  int64 height = 3;
+}
+
+message Vote {
+  VoteType vote_type = 1;
+  int64 height = 2;
+  bytes value_hash = 3;
+  google.protobuf.Timestamp timestamp = 4 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  pbcrypto.Signature signature = 5;
+}
+
+message Prepare {
+  ConsensusMessageType type = 1;
+  string id = 2 [(gogoproto.customname) = "ID"];
+  int64 height = 3;
+  pbtypes.Block block = 4;
+  google.protobuf.Timestamp timestamp = 5 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  pbcrypto.Signature signature = 6;
+}
+
+message PrepareVote {
+  Vote vote = 1;
+}
+
+message PreCommit {
+  ConsensusMessageType type = 1;
+  string id = 2 [(gogoproto.customname) = "ID"];
+  int64 height = 3;
+  bytes value_hash = 4;
+  google.protobuf.Timestamp timestamp = 5 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  pbcrypto.AggregateSignature aggregate_signature = 6;
+}
+
+message PreCommitVote {
+  Vote vote = 1;
+}
+
+message Commit {
+  ConsensusMessageType type = 1;
+  string id = 2 [(gogoproto.customname) = "ID"];
+  int64 height = 3;
+  bytes value_hash = 4;
+  google.protobuf.Timestamp timestamp = 5 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  pbcrypto.AggregateSignature aggregate_signature = 6;
+}
+
+message CommitVote {
+  Vote vote = 1;
+}
+
+message Decide {
+  ConsensusMessageType type = 1;
+  string id = 2 [(gogoproto.customname) = "ID"];
+  int64 height = 3;
+  bytes value_hash = 4;
+  google.protobuf.Timestamp timestamp = 5 [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
+  pbcrypto.AggregateSignature aggregate_signature = 6;
+}
+
+// protoc --gogofaster_out=. -I=$GOPATH/src/meta-- -I=$GOPATH/src -I=$GOPATH/src/gogoproto-1.4.3/protobuf -I=. consensus.proto
+
+message Message {
+  oneof Msg {
+    NextView next_view = 1;
+    Prepare prepare = 2;
+    PrepareVote prepare_vote = 3;
+    PreCommit pre_commit = 4;
+    PreCommitVote pre_commit_vote = 5;
+    Commit commit = 6;
+    CommitVote commit_vote = 7;
+    Decide decide = 8;
+  }
+}

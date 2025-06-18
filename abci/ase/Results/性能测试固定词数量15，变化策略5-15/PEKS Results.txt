@@ -1,0 +1,55 @@
+PEKS: Running times (ms) curve MNT224: n1=5  n2=5  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  12.68     11.40    12.07     6.13
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=6  n2=6  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.46     12.72    12.21     6.05
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=7  n2=7  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.69     14.62    12.24     6.15
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=8  n2=8  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.77     15.28    13.02     6.16
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=9  n2=9  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  12.26     17.72    12.24     6.60
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=10  n2=10  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.99     19.20    11.97     6.29
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=11  n2=11  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  12.15     21.13    12.19     6.78
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=12  n2=12  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.33     22.94    12.74     6.38
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=13  n2=13  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  12.64     24.32    12.96     6.72
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=14  n2=14  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.98     26.14    12.62     7.26
+
+**************************************************************
+PEKS: Running times (ms) curve MNT224: n1=15  n2=15  m=15  i=1
+PEKS                  Setup     TkGen     Enc     Search
+PEKS                  11.72     27.24    12.29     6.95
+
+**************************************************************
